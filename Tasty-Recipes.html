@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وصفات الطبخ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>وصفات الطبخ</h1>
+    </header>
+    <main>
+        <section id="add-recipe">
+            <h2>أضف وصفة جديدة</h2>
+            <form id="recipe-form">
+                <input type="text" id="title" placeholder="عنوان الوصفة" required>
+                <textarea id="ingredients" placeholder="المكونات" required></textarea>
+                <textarea id="steps" placeholder="خطوات التحضير" required></textarea>
+                <button type="submit">إضافة الوصفة</button>
+            </form>
+        </section>
+        <section id="recipes">
+            <h2>الوصفات</h2>
+            <div id="recipe-list"></div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
